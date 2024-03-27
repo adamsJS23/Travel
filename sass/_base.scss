@@ -10,3 +10,10 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh repeat(2, min-content);
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
