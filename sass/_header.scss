@@ -1,23 +1,43 @@
-.header{
-  &__text{
+.header {
+  position: relative;
+  background-image: url("../assets/images/hero--large.jpg");
+  background-size: cover;
+  background-position: center;
+  border-bottom: 1rem solid $color-primary;
 
+  &__text {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
 
-  &__paragraph{
+  &__text h1 > * {
+    display: block;
+  }
 
+  &__text {
+  }
+
+  &__paragraph {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: $color-white;
   }
 }
 
-.nav{
-  &__list{
-
+.nav {
+  &__list {
   }
 
-  &__item{
-
+  &__item {
   }
 
-  &__link{
-    
+  &__link {
   }
 }
