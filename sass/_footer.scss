@@ -1,0 +1,15 @@
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background-color: $color-primary;
+  padding: 2rem;
+  border-bottom-left-radius: 1rem;
+
+  &__copyright{
+    font-size: 1.6rem;
+    font-weight: 100;
+    color: $color-white;
+  }
+}

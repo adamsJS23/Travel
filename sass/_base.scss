@@ -10,3 +10,27 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh repeat(2, min-content);
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.btn {
+  background: none;
+  border: none;
+  border-radius: none;
+  background-color: $color-secondary;
+  padding: 1rem 2.5rem;
+  color: $color-white;
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all ease .3s;
+
+  &:hover {
+    background-color: darken($color-secondary, 5%);
+  }
+}
