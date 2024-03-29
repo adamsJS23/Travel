@@ -18,6 +18,18 @@ html {
   border-bottom-left-radius: 1rem;
 }
 
+.wrapper{
+  max-width: 120rem;
+  margin: 0 auto;
+  
+}  
+
+.section-features{
+  padding: 15rem 0;
+  background-color: $color-primary;
+  color: $color-white;
+}
+
 .btn {
   background: none;
   border: none;
