@@ -1,0 +1,14 @@
+.stories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, min-content));
+  justify-content: center;
+  grid-column-gap: 4rem;
+  grid-row-gap: 4;
+}
+
+.story {
+}
+
+.icon--coment {
+  background-image: url("../assets/images/icons/comment.svg");
+}
