@@ -9,3 +9,20 @@
 .u-margin-bottom-sm{
   margin-bottom: 3rem !important;
 }
+
+.u-bold{
+  font-weight: 700;
+}
+
+.u-color-white{
+  color: $color-white !important;
+} 
+
+.u-color-blue{
+  color: $color-primary !important;
+} 
+
+.u-gap-small{
+  display: flex;
+  gap: 1rem;
+}
