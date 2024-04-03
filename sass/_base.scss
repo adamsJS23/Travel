@@ -18,20 +18,27 @@ html {
   border-bottom-left-radius: 1rem;
 }
 
-.wrapper{
+.wrapper {
   max-width: 120rem;
   margin: 0 auto;
-  
-}  
+}
 
-.section-features{
+.section-features {
   padding: 15rem 0;
   background-color: $color-primary;
   color: $color-white;
 }
 
-.section-story{
-  padding: 15rem 0;
+.section-story {
+  padding: 8rem 0 8rem;
+  background-image: linear-gradient(
+      rgba($color-white, 0.3),
+      rgba($color-white, 0.3)
+    ),
+    url("../assets/images/testimonials-bg.jpg");
+
+  background-position: center;
+  background-size: cover;
 }
 
 .btn {
@@ -44,7 +51,7 @@ html {
   font-size: 1.6rem;
   font-weight: 500;
   cursor: pointer;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 
   &:hover {
     background-color: darken($color-secondary, 5%);
