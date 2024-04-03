@@ -6,7 +6,52 @@
   grid-row-gap: 4;
 }
 
-.story {
+
+.story{
+  position: relative;
+}
+
+
+
+.story__img{
+  border-radius: 50%;
+  margin-bottom: .5rem;
+  border:6px solid $color-white;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-175%);
+  z-index: 3;
+}
+
+.story__content{
+  background-color: $color-white;
+  opacity: .7;
+  padding: 8rem 4rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.story__name{
+color: $color-primary;
+font-size: 2.5rem;
+font-weight:500;
+margin-bottom: .5rem;
+}
+
+.story__time{
+font-size: 1.6rem;
+color: $color-secondary;
+margin-bottom: 2rem;
+}
+
+.story__text{
+font-size: 1.6rem;
+font-weight: 300;
+letter-spacing: 1px;
+line-height: 1.6;
 }
 
 .icon--coment {
