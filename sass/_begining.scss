@@ -1,18 +1,38 @@
-.begining__heading-secondary{
+.begining__heading-secondary {
   font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
   color: $color-secondary;
   text-align: center;
   width: 35%;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
-.first-trip-img__box{
+.first-trip-img__box {
   text-align: center;
 }
 
-.first-trip-img{
-  // text-align: center;
+.first-trip-img {
   width: 70%;
+}
+
+.started-box {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 4rem;
+}
+
+.started-box__img {
+width: 100%;
+}
+
+.started-box__text {
+grid-column: 2/span 2;
+}
+
+.started-box p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 4rem;
 }
