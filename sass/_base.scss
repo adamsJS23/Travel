@@ -61,3 +61,15 @@ html {
     background-color: darken($color-secondary, 5%);
   }
 }
+
+.link:link,
+.link:visited{
+font-weight: 500;
+color: $color-secondary;
+}
+
+.link:hover,
+.link:active{
+color: $color-primary;
+text-decoration: none;
+}
