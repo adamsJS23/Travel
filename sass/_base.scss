@@ -9,6 +9,14 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+
+  @include respond(big-desktop){
+    font-size: 75%;
+  }
+
+  @include respond(tab-port){
+    font-size: 56.25%;
+  }
 }
 
 .container {
@@ -21,10 +29,18 @@ html {
 .wrapper {
   max-width: 120rem;
   margin: 0 auto;
+
+  
 }
+
+
 
 .section-beginings{
   padding: 10rem 0 8rem;
+
+  @include respond(tab-land){
+    padding: 10rem 4rem 8rem;
+  }
 }
 
 .section-features {
@@ -36,13 +52,17 @@ html {
 .section-story {
   padding: 8rem 0 8rem;
   background-image: linear-gradient(
-      rgba($color-white, 0.3),
-      rgba($color-white, 0.3)
+    rgba($color-white, 0.3),
+    rgba($color-white, 0.3)
     ),
     url("../assets/images/testimonials-bg.jpg");
-
-  background-position: center;
-  background-size: cover;
+    
+    background-position: center;
+    background-size: cover;
+    
+    @include respond(tab-land){
+    padding: 8rem 4rem 8rem;
+  }
 }
 
 
@@ -77,3 +97,5 @@ color: $color-secondary;
 color: $color-primary;
 text-decoration: none;
 }
+
+
