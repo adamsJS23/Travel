@@ -29,8 +29,6 @@ html {
 .wrapper {
   max-width: 120rem;
   margin: 0 auto;
-
-  
 }
 
 
@@ -41,12 +39,20 @@ html {
   @include respond(tab-land){
     padding: 10rem 4rem 8rem;
   }
+
+  @include respond(tab-port){
+    padding: 8rem 4rem 8rem;
+  }
 }
 
 .section-features {
   padding: 15rem 0;
   background-color: $color-primary;
   color: $color-white;
+
+  @include respond(phone-land){
+    padding: 8rem 0;
+  }
 }
 
 .section-story {
