@@ -83,11 +83,26 @@
             </div>
 
             <div class="started-box">
-              <img
-                src="assets/images/our-start.jpg"
-                alt="A Woman picture looking in the left direction "
-                class="started-box__img"
-              />
+              
+              <picture >
+                <source class="started-box__img" media="(max-width:37.5em)" srcset="assets/images/our-start-landscape-small.jpg" alt="A Woman picture looking in the left direction"/>
+
+                <source class="started-box__img"
+                  srcset="assets/images/our-start-landscape.jpg"
+                  media="(max-width:47.75em)" aria="A woman picture looking in the left direction"
+                />
+                
+                <source class="started-box__img"
+                  srcset="assets/images/our-start-portrait.jpg"
+                  media="(max-width:59.5em)" aria="A woman picture looking in the left direction"
+                />
+
+                <img class="started-box__img"
+                  srcset="assets/images/our-start.jpg"
+                  alt="A Woman picture looking in the left direction "
+                />
+              </picture>
+
               <div class="started-box__text">
                 <h4 class="heading-fourth u-margin-bottom-md">
                   Here's how we got started
