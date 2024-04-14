@@ -17,7 +17,7 @@
   }
 
   // 764px = 47.75em
-  @if ($breackpoint==phone-port) {
+  @if ($breackpoint==phone-land) {
     @media only screen and (max-width: 47.75em) {
       @content;
     }
