@@ -9,11 +9,7 @@
     grid-column-gap: 6rem;
   }
   
-  // @include respond(tab-port){
-  //   grid-template-columns: repeat(auto-fit, minmax(40rem, min-content));
-  // }
-  
-  @include respond(phone-port){
+  @include respond(phone-land){
     grid-template-columns: 70%;
   }
 
