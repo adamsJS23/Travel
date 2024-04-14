@@ -1,7 +1,7 @@
 .u-margin-bottom-hg{
   margin-bottom: 16rem !important;
   
-  @include respond(phone-port){
+  @include respond(phone-land){
     margin-bottom: 12rem !important;
   }
 }
