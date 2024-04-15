@@ -5,6 +5,22 @@
   background-position: center;
   border-bottom: 1rem solid $color-primary;
 
+  @include respond(big-desktop){
+    background-image: url("../assets/images/hero--large-i.jpg");
+  }
+
+  @include respond(tab-land) {
+    background-image: url('../assets/images/hero--medium-i.jpg');
+  }
+
+  @include respond(tab-port) {
+    background-image: url('../assets/images/hero--small-i.jpg');
+  }
+
+  @include respond(phone) {
+    background-image: url('../assets/images/hero--smaller-i.jpg');
+  }
+
   &__text {
     position: absolute;
     width: 50%;
