@@ -5,42 +5,46 @@
   background-position: center;
   border-bottom: 1rem solid $color-primary;
 
+  /* RESPONSIVE IMAGES USING CSS*/
+
   @include respond(big-desktop) {
-    background-image: url("../assets/images/hero--large-i.jpg");
+    background-image: url("../assets/images/hero--large.jpg");
   }
   
   @media only screen and (min-width: 112.5em) and (min-resolution: 192dpi),
     only screen and(min-width:112.5em) and (-webkit-min-device-pixel-ratio: 2),
     only screen and (min-width: 112.5em) {
-    background-image: url("../assets/images/hero--large-hi-dpi-i.jpg");
+    backgrounmage: url("../assets/images/hero--large-hi-dpi.jpg");
   }
 
   @include respond(tab-land) {
-    background-image: url("../assets/images/hero--medium-i.jpg");
+    background-image: url("../assets/images/hero--medium.jpg");
   }
 
   @media only screen and (max-width: 75em) and (min-resolution: 192dpi),
     only screen and(max-width:75em) and (-webkit-min-device-pixel-ratio: 2) {
-    background-image: url("../assets/images/hero--medium-hi-dpi-i.jpg");
+    background-image: url("../assets/images/hero--medium-hi-dpi.jpg");
   }
 
   @include respond(tab-port) {
-    background-image: url("../assets/images/hero--small-i.jpg");
+    background-image: url("../assets/images/hero--small.jpg");
   }
 
   @media only screen and (max-width: 59.5em) and (min-resolution: 192dpi),
     only screen and (max-width: 59.5em) and (-webkit-min-device-pixel-ratio: 2) {
-    background-image: url("../assets/images/hero--small-hi-dpi-i.jpg");
+    background-image: url("../assets/images/hero--small-hi-dpi.jpg");
   }
 
   @include respond(phone) {
-    background-image: url("../assets/images/hero--smaller-i.jpg");
+    background-image: url("../assets/images/hero--smaller.jpg");
   }
 
   @media only screen and (max-width: 37.5em) and (min-resolution: 192dpi),
     only screen and (max-width: 37.5em) and (-webkit-min-device-pixel-ratio: 2) {
-    background-image: url("../assets/images/hero--smaller-hi-dpi-i.jpg");
+    background-image: url("../assets/images/hero--smaller-hi-dpi.jpg");
   }
+
+  /******************************************************************************/
 
   &__text {
     position: absolute;
