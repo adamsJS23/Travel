@@ -69,6 +69,10 @@
     font-size: 2.5rem;
     font-weight: 300;
     color: $color-white;
+
+    @include respond(tab-land-md){
+      font-size: 1.8rem;
+    }
   }
 }
 
@@ -81,6 +85,10 @@
     rgba($color-primary, 0.5)
   );
   padding: 2rem 8rem 2rem;
+
+  @include respond(tab-port){
+    padding: 2rem 4rem 2rem;
+  }
 }
 
 .hero__logo-box {
@@ -88,15 +96,32 @@
   top: 0;
   left: 10rem;
   width: 15%;
+  // max-width: 220px;
+  // min-width: 220px;
+  width: 220px;
   background-color: $color-primary;
-  font-size: 3rem;
   padding: 1rem 0 4rem;
   text-align: center;
   color: $color-white;
-
-  & span {
-    font-size: 2.3rem;
+  
+  @include respond(tab-port){
+    left: 5rem;
+    // padding: 1rem 0 4rem;
+    width: 180px;
   }
+
+}
+
+.line--1,.line--2{
+  display: block;
+}
+
+.line--1{
+  font-size: 3rem;
+}
+
+.line--2{
+  font-size: 2.5rem;
 }
 
 .nav {
