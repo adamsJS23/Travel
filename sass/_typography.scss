@@ -6,12 +6,20 @@ body {
   font-size: 7rem;
   font-weight: 300;
   color: $color-primary;
+
+  @include respond(tab-land-md){
+    font-size: 6rem;
+  }
 }
 
 .heading-secondary {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 300;
   color: $color-primary;
+
+  @include respond(tab-land-md){
+    font-size: 4rem;
+  }
 }
 
 .heading-tertiary {
