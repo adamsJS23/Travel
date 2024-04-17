@@ -1,0 +1,30 @@
+.mobile-nav {
+  &__checkbox {
+  }
+
+  &__button {
+  }
+
+  &__icon {
+    display: inline-block;
+    color: black;
+    height: 5px;
+    width: 200px;
+    z-index: 99;
+    opacity: 1;
+  }
+
+  &__icon::before {
+    content: "";
+    display: inline-block;
+    height: 4px;
+    width: 100%;
+  }
+
+  &__icon::before {
+    content: "";
+    display: inline-block;
+    height: 4px;
+    width: 100%;
+  }
+}
