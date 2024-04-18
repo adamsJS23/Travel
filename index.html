@@ -25,8 +25,8 @@
       <header class="hero">
         <div class="header clearfix">
           <div class="hero__logo-box">
-            <span class="line--1">Clear view </span><span class="line--2">Escapes</span>
-            
+            <span class="line--1">Clear view </span
+            ><span class="line--2">Escapes</span>
           </div>
           <nav class="nav">
             <ul class="nav__list">
@@ -43,7 +43,7 @@
                 <a href="#" class="nav__link nav__link--cta">Get in touch</a>
               </li>
             </ul>
-           
+          </nav>
           <!-- Mobile nav -->
           <div class="mobile-nav">
             <input
@@ -52,10 +52,9 @@
               id="nav-toggle"
             />
             <label for="nav-toggle" class="mobile-nav__button"
-              ><span class="mobile-nav__icon">&nbsp;</span
-            ></label>
+              ><span class="mobile-nav__icon">&nbsp;</span></label
+            >
           </div>
-        </nav>
         </div>
         <div class="hero__text">
           <h1 class="u-margin-bottom-md">
@@ -88,9 +87,19 @@
             </h4>
             <div class="first-trip-img__box u-margin-bottom-la">
               <picture>
-
-                <source  class="first-trip-img" srcset="assets/images/first-trip-low-res.jpg" media="(max-width:47.75em)">
-                <img  class="first-trip-img" srcset="assets/images/first-trip.jpg 976w, assets/images/first-trip-hi-dpi.jpg 1952w" alt="Man and Woman walking with hand in hand">
+                <source
+                  class="first-trip-img"
+                  srcset="assets/images/first-trip-low-res.jpg"
+                  media="(max-width:47.75em)"
+                />
+                <img
+                  class="first-trip-img"
+                  srcset="
+                    assets/images/first-trip.jpg         976w,
+                    assets/images/first-trip-hi-dpi.jpg 1952w
+                  "
+                  alt="Man and Woman walking with hand in hand"
+                />
               </picture>
               <!-- <img
                 class="first-trip-img"
@@ -100,21 +109,30 @@
             </div>
 
             <div class="started-box">
-              
-              <picture >
-                <source class="started-box__img" media="(max-width:37.5em)" srcset="assets/images/our-start-landscape-small.jpg" alt="A Woman picture looking in the left direction"/>
+              <picture>
+                <source
+                  class="started-box__img"
+                  media="(max-width:37.5em)"
+                  srcset="assets/images/our-start-landscape-small.jpg"
+                  alt="A Woman picture looking in the left direction"
+                />
 
-                <source class="started-box__img"
+                <source
+                  class="started-box__img"
                   srcset="assets/images/our-start-landscape.jpg"
-                  media="(max-width:47.75em)" aria="A woman picture looking in the left direction"
-                />
-                
-                <source class="started-box__img"
-                  srcset="assets/images/our-start-portrait.jpg"
-                  media="(max-width:59.5em)" aria="A woman picture looking in the left direction"
+                  media="(max-width:47.75em)"
+                  aria="A woman picture looking in the left direction"
                 />
 
-                <img class="started-box__img"
+                <source
+                  class="started-box__img"
+                  srcset="assets/images/our-start-portrait.jpg"
+                  media="(max-width:59.5em)"
+                  aria="A woman picture looking in the left direction"
+                />
+
+                <img
+                  class="started-box__img"
                   srcset="assets/images/our-start.jpg"
                   alt="A Woman picture looking in the left direction "
                 />
