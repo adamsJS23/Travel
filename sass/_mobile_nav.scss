@@ -1,6 +1,16 @@
 .mobile-nav {
+  
+  display: none;
+  
+  @include respond(phone-land){
+    display: block;
+    position: absolute;
+    right: 5rem;
+    top: 50%;
+  }
 
   &__checkbox {
+    display: none;
   }
 
   &__button {
@@ -10,23 +20,23 @@
   &__icon {
     display: inline-block;
     background-color: $color-primary;
-    height: 1px;
+    height: 2px;
     width: 10px;
     transition: all ease 0.3s;
 
     position: relative;
   }
 
-&__icon::before,
-&__icon::after{
-  content: "";
-  display: inline-block;
-  height: 3px;
-  background-color: $color-primary;
-  position: absolute;
-  right: 0;
-  transition: all ease 0.3s;
-}
+  &__icon::before,
+  &__icon::after {
+    content: "";
+    display: inline-block;
+    height: 3px;
+    background-color: $color-primary;
+    position: absolute;
+    right: 0;
+    transition: all ease 0.3s;
+  }
 
   &__icon::before {
     width: 20px;
@@ -45,5 +55,4 @@
   &__button:hover &__icon::after {
     transform: translateX(7px);
   }
-
 }
