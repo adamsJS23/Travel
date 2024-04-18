@@ -10,6 +10,10 @@ body {
   @include respond(tab-land-md){
     font-size: 6rem;
   }
+
+  @include respond(phone-land){
+    font-size: 4rem;
+  }
 }
 
 .heading-secondary {
@@ -20,6 +24,11 @@ body {
   @include respond(tab-land-md){
     font-size: 4rem;
   }
+
+  @include respond(phone-land){
+    font-size: 3rem;
+  }
+
 }
 
 .heading-tertiary {
