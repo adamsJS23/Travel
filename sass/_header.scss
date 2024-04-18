@@ -10,7 +10,7 @@
   @include respond(big-desktop) {
     background-image: url("../assets/images/hero--large.jpg");
   }
-  
+
   @media only screen and (min-width: 112.5em) and (min-resolution: 192dpi),
     only screen and(min-width:112.5em) and (-webkit-min-device-pixel-ratio: 2),
     only screen and (min-width: 112.5em) {
@@ -70,7 +70,7 @@
     font-weight: 300;
     color: $color-white;
 
-    @include respond(tab-land-md){
+    @include respond(tab-land-md) {
       font-size: 1.8rem;
     }
   }
@@ -86,8 +86,12 @@
   );
   padding: 2rem 8rem 2rem;
 
-  @include respond(tab-port){
+  @include respond(tab-port) {
     padding: 2rem 4rem 2rem;
+  }
+
+  @include respond(phone-land){
+    height: 8rem;
   }
 }
 
@@ -103,29 +107,38 @@
   padding: 1rem 0 4rem;
   text-align: center;
   color: $color-white;
-  
-  @include respond(tab-port){
+
+  @include respond(tab-port) {
     left: 5rem;
     // padding: 1rem 0 4rem;
     width: 180px;
   }
 
+  @include respond(phone-land){
+  padding: 1rem 0 2rem;
+
+  }
 }
 
-.line--1,.line--2{
+.line--1,
+.line--2 {
   display: block;
 }
 
-.line--1{
+.line--1 {
   font-size: 3rem;
 }
 
-.line--2{
+.line--2 {
   font-size: 2.5rem;
 }
 
 .nav {
   margin-left: auto;
+
+  @include respond(phone-land) {
+    display: none;
+  }
 
   &__list {
     list-style: none;
@@ -166,9 +179,3 @@
     color: $color-white;
   }
 }
-
-// .clearfix::after{
-//   content: "";
-//   display: table;
-//   clear: both;
-// }
