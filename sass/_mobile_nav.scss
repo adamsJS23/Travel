@@ -1,12 +1,11 @@
 .mobile-nav {
-  
   display: none;
-  
+
   @include respond(phone-land){
     display: block;
     position: absolute;
     right: 5rem;
-    top: 50%;
+    top: 5rem;
   }
 
   &__checkbox {
@@ -16,15 +15,18 @@
   &__button {
     cursor: pointer;
   }
-
+  
   &__icon {
     display: inline-block;
-    background-color: $color-primary;
+    background-color: $color-secondary;
     height: 2px;
     width: 10px;
     transition: all ease 0.3s;
-
-    position: relative;
+    
+    position: fixed;
+    top: 5rem;
+    right: 5rem;
+    z-index: 9999999;
   }
 
   &__icon::before,
@@ -32,7 +34,7 @@
     content: "";
     display: inline-block;
     height: 3px;
-    background-color: $color-primary;
+    background-color: $color-secondary;
     position: absolute;
     right: 0;
     transition: all ease 0.3s;
@@ -55,4 +57,52 @@
   &__button:hover &__icon::after {
     transform: translateX(7px);
   }
+}
+
+.navigation{
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  &__nav{
+    
+    background-color: $color-primary;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  &__list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto;
+
+  }
+
+  &__item{
+
+  }
+
+  &__link{
+    text-decoration: none;
+    color: $color-white;
+    font-size: 3rem;
+
+  }
+}
+
+.navigation__list .nav__link{
+  font-size: 3rem;
 }
