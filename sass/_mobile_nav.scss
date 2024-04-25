@@ -1,7 +1,7 @@
 .mobile-nav {
   display: none;
 
-  @include respond(phone-land){
+  @include respond(phone-land) {
     display: block;
     position: absolute;
     right: 5rem;
@@ -10,19 +10,51 @@
 
   &__checkbox {
     display: none;
+    // position: relative;
+    // z-index: 99999;
+  }
+
+  &__checkbox:checked ~ .navigation__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $color-primary;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+  }
+
+  &__checkbox:checked + .mobile-nav__button .mobile-nav__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + .mobile-nav__button .mobile-nav__icon::before{
+    top: 0;
+    width: 150%;
+    transform: rotate(38deg);
+  }
+
+  &__checkbox:checked + .mobile-nav__button .mobile-nav__icon::after{
+    top: 0;
+    width: 150%;
+    transform: rotate(-38deg);
   }
 
   &__button {
     cursor: pointer;
   }
-  
+
   &__icon {
     display: inline-block;
     background-color: $color-secondary;
     height: 2px;
     width: 10px;
     transition: all ease 0.3s;
-    
+
     position: fixed;
     top: 5rem;
     right: 5rem;
@@ -59,28 +91,18 @@
   }
 }
 
-.navigation{
+.navigation {
   position: absolute;
   top: 0;
   left: 0;
-  
-  &__nav{
-    
-    background-color: $color-primary;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99999;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: none;
 
+  &__nav {
+    display: none;
   }
 
-  &__list{
+  &__list {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -90,16 +112,16 @@
     margin: 0 auto;
   }
 
-  &__item{
+  &__item {
   }
 
-  &__link{
+  &__link {
     text-decoration: none;
     color: $color-white;
     font-size: 3rem;
   }
 }
 
-.navigation__list .nav__link{
+.navigation__list .nav__link {
   font-size: 3rem;
 }
